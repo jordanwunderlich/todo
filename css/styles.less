@@ -1,0 +1,66 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	max-width: 700px;
+}
+
+.section {
+	position: relative;
+	clear: both;
+}
+
+.section span {
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	display: none;
+}
+
+.section:hover span {
+	display: block;
+}
+
+.checkbox {
+	position: absolute;
+	transform: scale(1.5);
+	top: 7px;
+	left: 10px;
+}
+
+.buttons {
+	margin-top: 15px;
+	text-align: center;
+	clear: both;
+}
+
+.form-control {
+	padding: 0 30px;
+}
+
+.form-control.true {
+	text-decoration: line-through;
+}
+
+.saved {
+	opacity: 0;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.saved.display {
+	animation-name: anim;
+	animation-duration: 2s;
+}
+
+@keyframes anim {
+	0% {opacity: 0;}
+	1% {opacity: 1;}
+	100% {opacity: 0;}
+}

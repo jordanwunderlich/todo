@@ -1,0 +1,11 @@
+<h1>List</h1>
+<form ng-repeat="todo in todos" class="form-group section">
+	<input type="checkbox" ng-model="todo.checked" class="checkbox">
+	<input type="text" ng-model="todo.name" class="form-control {{todo.checked}}">
+	<span ng-click="remove($index)">X</span>
+</form>
+<div class="buttons">
+	<button ng-click="addTodo()" class="btn btn-primary">Add New</button>
+	<button ng-click="save()" class="btn btn-primary">Save</button>
+</div>
+<p ng-class="{display: show}" class="saved">Saved!</p>
